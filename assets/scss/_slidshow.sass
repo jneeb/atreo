@@ -1,0 +1,121 @@
+.events
+	display: flex
+	max-height: 400px
+	justify-content: center
+	align-items: center
+	overflow: hidden
+	box-sizing: border-box
+	max-width: 100%
+
+	span
+		width: 300px
+		height: 400px
+		background: rgba(36, 36, 36, 0.15)
+		position: absolute
+
+	span:before
+		position: absolute
+		height: 50px
+		width: 10px
+		background: rgba(255, 255, 255, .8)
+		display: block
+		content: ""
+		border-radius: 20px
+		transform: translate(145px, 175px)
+
+	span:after
+		position: absolute
+		height: 50px
+		width: 10px
+		background: rgba(255, 255, 255, .8)
+		display: block
+		content: ""
+		border-radius: 20px
+		transform: rotate(45deg) translate(145px, 175px)
+
+	img
+		height: 400px
+		width: 300px
+		transition: all 0.3s ease
+		cursor: pointer
+
+		&:hover
+			filter: opacity(0.8)
+
+#slideFlex
+	display: flex
+	justify-content: center
+	align-items: center
+	background: rgba(0, 0, 0, 0.9)
+	height: 100vh
+	width: 100vw
+	transition: all 0.2s ease
+	z-index: 2
+	position: fixed
+	top: 0
+	left: 0
+
+	#slideshow
+		width: 90%
+		max-width: 800px
+		max-height: 800px
+		box-sizing: border-box
+		overflow: none
+		position: relative
+		box-sizing: border-box
+		z-index: 1
+
+		img
+			width: 100%
+			max-width: 800px
+			max-height: 800px
+			cursor: pointer
+
+		#close
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 50px
+			height: 50px
+			position: absolute
+			top: 0
+			right: 0
+			box-sizing: border-box
+			cursor: pointer
+
+			span, span:before
+				width: 30px
+				height: 3px
+				background: white
+				display: block
+				content: ""
+
+			span
+				transform: rotate(45deg)
+				top: -3px
+
+			span:before
+				transform: rotate(-90deg)
+
+		.bottomFlex
+			width: 100%
+			max-width: 800px
+			position: absolute
+			bottom: 0
+			margin: 20px 0
+			padding: 0 20px
+			font-size: 25px
+			box-sizing: border-box
+
+			.right
+				color: white
+				float: right
+				cursor: pointer
+
+			.left
+				color: white
+				float: left
+				cursor: pointer
+
+#slideFlex.hide
+	display: none

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/main.css">
+<body>
+	<div class="events">
+		<span></span>
+		<img id="galleryOne" src="/img/atreoTshirt.JPG" alt="" onclick="galleryShow()">
+	</div>
+	<div id="slideFlex" class="hide">
+		<div id="slideshow">
+			<img class="mySlides" src="img/atreoCrewneck.JPG" alt="" onclick="plusDivs(1)">
+			<img class="mySlides" src="/img/atreoLogoBlack.jpg" alt="" onclick="plusDivs(1)">
+			<img class="mySlides" src="/img/atreoTshirt.JPG" alt="" onclick="plusDivs(1)">
+			<div id="close">
+				<span></span>
+			</div>
+			<div class="bottomFlex">
+				<div class="right" onclick="plusDivs(1)">
+					&#10095;
+				</div>
+				<div class="left" onclick="plusDivs(-1)">
+					&#10094;
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/functions/slideshow.js"></script>
+</body>
+</html>

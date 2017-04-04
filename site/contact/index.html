@@ -1,0 +1,9 @@
+<div class="contactForm">
+	<form action="index.php" id="form" method="post">
+		<input type="hidden" name="token" value="<?php echo $newToken; ?>">
+		<input type="text" name="name" placeholder="Full Name">
+		<input type="text" name="email" placeholder="Email">
+		<textarea name="comments" placeholder="Message" id="" cols="30" rows="10"></textarea>
+		<button type="submit" name="submit">Send</button>
+	</form>
+</div>

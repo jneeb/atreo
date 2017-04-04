@@ -1,0 +1,26 @@
+{
+  "name": "atreo",
+  "version": "1.0.0",
+  "description": "Footer and events / about me page for atreo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jneeb/atreo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jneeb/atreo/issues"
+  },
+  "homepage": "https://github.com/jneeb/atreo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

@@ -1,0 +1,240 @@
+<style>
+.events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: 300px; }
+  .events img {
+    height: 400px;
+    width: 300px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+    .events img:hover {
+      -webkit-filter: opacity(0.8);
+              filter: opacity(0.8); }
+
+#slideFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 100vw;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  #slideFlex #slideshow {
+    width: 90%;
+    max-width: 800px;
+    max-height: 800px;
+    box-sizing: border-box;
+    overflow: none;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1; }
+    #slideFlex #slideshow img {
+      width: 100%;
+      max-width: 800px;
+      max-height: 800px;
+      cursor: pointer; }
+    #slideFlex #slideshow #close {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      box-sizing: border-box; }
+      #slideFlex #slideshow #close span, #slideFlex #slideshow #close span:before {
+        width: 30px;
+        height: 3px;
+        background: white;
+        display: block;
+        content: ""; }
+      #slideFlex #slideshow #close span {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        top: -3px; }
+      #slideFlex #slideshow #close span:before {
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg); }
+    #slideFlex #slideshow .bottomFlex {
+      width: 100%;
+      max-width: 800px;
+      position: absolute;
+      bottom: 0;
+      margin: 20px 0;
+      padding: 0 20px;
+      font-size: 25px;
+      box-sizing: border-box; }
+      #slideFlex #slideshow .bottomFlex .right {
+        color: white;
+        float: right;
+        cursor: pointer; }
+      #slideFlex #slideshow .bottomFlex .left {
+        color: white;
+        float: left;
+        cursor: pointer; }
+
+#slideFlex.hide {
+  display: none; }
+</style>
+<div class="events">
+	<img id="galleryOne" src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/event.jpg" onclick="galleryShow()"/>
+</div>
+<div id="slideFlex" class="hide">
+	<div id="slideshow">
+		<img class="mySlides" src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-1.jpg" onclick="plusDivs(1)" />
+		<img class="mySlides" src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-2.jpg" onclick="plusDivs(1)"/>
+		<img class="mySlides" src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-3.jpg" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-5.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-6.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-8.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-9.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-10.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-13.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-14.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-15.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-16.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-17.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-18.jpg" alt="" class="mySlides" onclick="plusDivs(1)" />
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-19.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-20.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-21.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-22.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-23.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-26.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-27.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-28.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-29.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-30.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-31.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-32.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-36.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-37.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-38.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-39.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-40.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-41.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-43.jpg" alt="" class="mySlides" onclick="plusDivs(1)" />
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-44.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-45.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-46.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-48.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-49.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-50.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-51.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-52.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-53.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-54.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-55.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-56.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-57.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-58.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-60.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-61.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-62.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-63.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-67.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-68.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-69.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-70.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-71.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-72.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-74.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-75.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-76.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-77.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-78.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-81.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-82.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-83.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-84.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-85.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-86.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-87.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-88.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-89.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-90.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-91.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-93.jpg" alt="" class="mySlides" onclick="plusDivs(1)" />
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-94.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<img src="//cdn.shopify.com/s/files/1/1868/1121/t/2/assets/S-96.jpg" alt="" class="mySlides" onclick="plusDivs(1)"/>
+		<div id="close">
+			<span></span>
+		</div>
+		<div class="bottomFlex">
+			<div class="right" onclick="plusDivs(1)">
+				&#10095;
+			</div>
+			<div class="left" onclick="plusDivs(-1)">
+				&#10094;
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+
+	function currentDiv(n) {
+		showDivs(slideIndex = n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		x[slideIndex-1].style.display = "block";
+	}
+
+	var close = document.getElementById("close");
+	var slideShow = document.getElementById("slideFlex");
+	close.onclick = slideClose;
+
+	function slideClose() {
+		slideShow.className += "hide";
+	}
+	var galleryOne = document.getElementById("galleryOne");
+	// galleryOne.onclick = galleryShow;
+
+	function galleryShow() {
+		slideShow.classList.remove("hide");
+	}
+</script>
